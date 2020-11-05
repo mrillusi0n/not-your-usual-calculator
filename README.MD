@@ -6,4 +6,4 @@ This is my attempt at implementing a really simple idea, but with elegance. I'm 
 
 ##### TODO
 
-- [] handle unary `-`
+- [ ] handle unary `-`
