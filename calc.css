@@ -1,0 +1,73 @@
+:root {
+    --primary-bg: #f1dbc2;
+    --secondary-bg: #f5e8da;
+    --primary-accent: #f38135;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--primary-bg);
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+.base {
+    height: 320px;
+    width: 256px;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--secondary-bg);
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.display {
+    border-radius: 8px;
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.4rem;
+    font-weight: 900;
+    font-family: sans-serif;
+    display: grid;
+    place-items: end;
+    padding: 0.4rem .8rem;
+    overflow: hidden;
+}
+
+.buttons {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.4rem;
+}
+
+.buttons button {
+    border: none;
+    border-radius: 0px;
+    font-size: 1.4rem;
+    font-weight: 900;
+    background: #e4dcd4;
+    color: #4d4d4d;
+    border-radius: 8px;
+}
+
+.buttons button:active {
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.16);
+}
+
+.buttons .equals {
+    grid-column: 4;
+    grid-row: 2 / span 4;
+    color: white;
+    background: var(--primary-accent);
+}
+
+button:focus {
+    outline: none;
+}
